@@ -16,7 +16,15 @@ import Founders from "@/components/Founders.astro";
 		<title>Glass Frog</title>
 	</head>
 
-	<body>
-      <Founders />
+	<body class="bg-zinc-200">
+    <div class="h-[calc(80vh)] flex items-center justify-center flex-col">
+      <div class="flex flex-col items-center justify-center gap-10 bg-gradient-to-b from-zinc-700 to-zinc-800 text-transparent bg-clip-text">
+        <h1 class="text-6xl font-bold">Leap with <b>Clarity</b></h1>
+        <h1 class="text-6xl font-bold">Land with <b>Confidence</b></h1>
+      </div>
+      <p class="max-w-3xl mt-10 font-semibold text-center"><i>A teen-led community empowering students to conquer the high school transition through peer mentorship, skill-building courses, and hands-on competitions.</i></p>
+      <p class="mt-4">Middle school to high school feels overwhelming. <b>We make it simpler.</b></p>
+    </div>
+    <Founders />
 	</body>
 </html>
