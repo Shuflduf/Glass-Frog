@@ -5,6 +5,7 @@ interface Founder {
   name: string;
   roles: string[];
   image: string;
+  bio?: string;
 }
 
 interface Props {
@@ -45,6 +46,7 @@ const {
       roles: [
         "Curriculum Developer",
         "Instructor",
+        "Disciplinary Lead"
       ],
       image: "/assets/founders/matt.webp",
     },
@@ -113,13 +115,13 @@ const {
 
     <div class="flex flex-wrap gap-8 justify-center">
       {founders.map((founder) => (
-        <div class="flex flex-col items-center group">
-          <div class="relative mb-4 overflow-hidden rounded-full w-40 h-40 border-2 border-gray-100 shadow-md transition-transform duration-300 group-hover:scale-105">
+        <div class="flex flex-col items-center">
+          <div class="relative mb-4 overflow-hidden rounded-full w-40 h-40 border-2 border-gray-100 shadow-md transition-transform duration-300 hover:scale-105">
             <img
             src={founder.image || "/assets/founders/frog.svg"}
               alt={`Photo of ${founder.name}`}
-              class="object-cover w-full h-full"
-            />
+              class="object-cover w-full h-full group"
+              ><img/>
           </div>
           <h3 class="font-semibold text-lg text-center">{founder.name}</h3>
           <!-- <p class="text-gray-600 text-center">{founder.role}</p> -->
@@ -128,6 +130,9 @@ const {
               <li>{role}</li>
             ))}
           </ul>
+          {founder.bio && (
+            <p class="text-gray-600 text-center mt-2 opacity-0 group-hover:opacity-100">{founder.bio}</p>
+          )}
         </div>
       ))}
     </div>
