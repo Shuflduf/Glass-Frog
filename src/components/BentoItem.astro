@@ -1,0 +1,7 @@
+---
+const { width } = Astro.props;
+---
+
+<div class={`flex-${width} p-4 border border-dashed border-zinc-700 rounded-xl bg-zinc-300 shadow-lg`}>
+  <slot />
+</div>
