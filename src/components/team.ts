@@ -1,0 +1,102 @@
+interface Member {
+  name: string;
+  roles: string[];
+  image: string;
+  bio?: string;
+}
+
+export const team = [
+  {
+    name: "Reecher",
+    roles: [
+      "Lead Director",
+      "Curriculum Developer",
+      "Instructor",
+    ],
+    image: "/assets/founders/richard.gif",
+    bio: "Richard is dedicated to providing all students at GFA fun, engaging, and helpful learning. Enjoys playing badminton and studying. Professional Eater.",
+  },
+  {
+    name: "Schmikal",
+    roles: [
+      "Technical Director",
+      "Web Developer",
+      "Instructor",
+    ],
+    image: "/assets/founders/michael.webp",
+    bio: "I’ve been using low level programming languages ever since I was a wee little boy. I’m an expert in Java, C, C++, and most importantly, RUST.",
+  },
+  {
+    name: "Peethan",
+    roles: [
+      "Co-Lead",
+      "Instructor",
+    ],
+    image: "/assets/founders/ethan.webp",
+  },
+  {
+    name: "Mote",
+    roles: [
+      "Curriculum Developer",
+      "Instructor",
+      "Disciplinary Lead"
+    ],
+    image: "/assets/founders/matt.webp",
+  },
+  {
+    name: "Rav",
+    roles: [
+      "Technical",
+      "Instructor",
+    ],
+    image: "/assets/founders/aarav.webp",
+  },
+  {
+    name: "Jog",
+    roles: [
+      "Event Coordinator",
+      "Partnership Manager",
+    ],
+    image: "/assets/founders/josh.webp",
+  },
+  {
+    name: "Gayr",
+    roles: [
+      "Curriculum Developer",
+      "Instructor",
+    ],
+    image: "/assets/founders/gary.webp",
+  },
+  {
+    name: "Mi",
+    roles: [
+      "Course Moderator",
+    ],
+    image: "/assets/founders/whotfisthis.webp",
+  },
+  {
+    name: "Jasper Springs",
+    roles: [
+      "Instructor",
+    ],
+    image: "/assets/founders/jasper.webp",
+  },
+  {
+    name: "Ega",
+    roles: [
+      "Advertising Manager",
+      "Course Moderator",
+    ],
+    image: "/assets/founders/megan.webp",
+  },
+  {
+    name: "Zoon Minotaur",
+    roles: [
+      "Advertising Manager",
+      "Course Moderator",
+    ],
+    image: "/assets/founders/zoon.webp",
+  },
+]
+
+export type { Member };
