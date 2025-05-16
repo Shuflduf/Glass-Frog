@@ -10,7 +10,7 @@ export const team = [
     name: "Reecher",
     roles: ["Lead Director", "Curriculum Developer", "Instructor"],
     image: "/assets/founders/richard.gif",
-    bio: "Richard is dedicated to providing all students at GFA fun, engaging, and helpful learning. Enjoys playing badminton and studying. Professional Eater.",
+    bio: "I’m dedicated to providing all students at GFA fun, engaging, and helpful learning. I enjoy playing badminton and studying. Professional Eater.",
   },
   {
     name: "Schmikal",
@@ -27,6 +27,7 @@ export const team = [
     name: "Mote",
     roles: ["Curriculum Developer", "Instructor", "Disciplinary Lead"],
     image: "/assets/founders/matt.webp",
+    bio: "<b>The chance of precipitation is quite high.</b>",
   },
   {
     name: "Rav",
@@ -52,6 +53,7 @@ export const team = [
     name: "Jasper Springs",
     roles: ["Instructor"],
     image: "/assets/founders/jasper.webp",
+    bio: "I’m an excellent student and a wonderful teacher, I’m very talented in mathematics and a fan of clash royal.",
   },
   {
     name: "Ega",

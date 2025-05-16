@@ -25,6 +25,13 @@ import type { Member } from "@/components/team.ts";
               ))}
             </ul>
           </div>
+          {member.bio && (
+            <div class="flex items-center">
+              <div class="p-4 border-l-zinc-400 border-2 h-min">
+                <p class="w-80 italic" set:html={member.bio} />
+              </div>
+            </div>
+          )}
         </div>
       ))
     }
