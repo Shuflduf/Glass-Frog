@@ -64,6 +64,7 @@ export const team = [
     name: "Zoon Minotaur",
     roles: ["Advertising Manager", "Course Moderator"],
     image: "/assets/founders/zoon.webp",
+    bio: "<s style=\"color: black; text-decoration-thickness: 3px\"><span style=\"color: red\">The Minotaur, one of the oldest known surviving demons, was sculpted by ████ ██████ as a gift for the then Judge of Hell, Minos, in an attempt to form some kind of rapport.</span></s>",
   },
 ];
 
