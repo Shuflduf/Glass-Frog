@@ -20,9 +20,8 @@ import type { Member } from "@/components/team.ts";
                 transition-all z-40
                 bg-gray-800 text-white p-3 rounded-lg text-sm text-center
               `}
-              >
-                {founder.bio}
-              </div>
+              set:html={founder.bio}
+              />
             )}
 
             <div class="overflow-hidden rounded-full w-40 h-40 border-2 border-gray-100 shadow-md transition-transform duration-300 hover:scale-105">
