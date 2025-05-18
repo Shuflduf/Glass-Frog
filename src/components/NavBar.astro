@@ -1,4 +1,21 @@
-<div class="fixed p-4 w-full z-50">
+<script>
+  let lastScroll = window.scrollY;
+  const navbar = document.querySelector('[data-navbar]');
+
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.scrollY;
+    if (currentScroll > lastScroll) {
+      // down
+      navbar?.classList.add('-translate-y-full');
+    } else {
+      // up
+      navbar?.classList.remove('-translate-y-full');
+    }
+    lastScroll = currentScroll;
+  });
+</script>
+
+<div data-navbar class="fixed p-4 w-full z-50 transition-transform duration-300">
   <div
     class="w-full rounded-2xl backdrop-blur-md border border-zinc-400 bg-zinc-300/30 flex flex-row p-4 items-center shadow-lg gap-16 justify-between"
   >
