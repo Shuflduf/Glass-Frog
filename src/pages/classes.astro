@@ -1,0 +1,68 @@
+---
+import "../styles/global.css";
+
+import NavBar from "@/components/NavBar.astro";
+
+const classes = [
+  {
+    name: "Math",
+    subjects: [
+      "Math 7",
+      "Math 8",
+      "Math 9",
+      "Math 10",
+      "Math 10 IB",
+      "Math 20 IB",
+    ],
+  },
+  {
+    name: "Sciences",
+    subjects: [
+      "Science 10 IB",
+      "Physics 20 IB",
+      "Biology 20 IB",
+      "Chemistry 20",
+    ],
+  },
+  {
+    name: "Humanities",
+    subjects: ["Compositional Writing 10 IB", "Reading Comprehension 10 IB"],
+  },
+  {
+    name: "Computer Science",
+    subjects: ["Web Design and Development", "Systems Programming"],
+  },
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Glass Frog</title>
+  </head>
+
+  <body class="bg-zinc-200 w-full">
+    <NavBar />
+    <div class="h-32"></div>
+    <section class="py-12 px-4 max-w-xs mx-auto">
+      <h1 class="text-5xl font-bold text-center mb-8">Classes</h1>
+      <div class="flex flex-col gap-4">
+        {classes.map((classItem) => (
+          <div class="flex flex-col">
+            <h2 class="text-3xl font-semibold">{classItem.name}</h2>
+            <ul class="list-disc pl-6">
+              {classItem.subjects.map((subject) => (
+                <li>
+                  <h3 class="text-lg">{subject}</h3>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </section>
+  </body>
+</html>

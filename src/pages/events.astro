@@ -1,0 +1,21 @@
+---
+import "../styles/global.css";
+
+import NavBar from "@/components/NavBar.astro";
+import Events from "./parts/Events.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Glass Frog</title>
+  </head>
+
+  <body class="bg-zinc-200 w-full">
+    <NavBar />
+    <Events />
+  </body>
+</html>
