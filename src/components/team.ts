@@ -40,9 +40,10 @@ export const team = [
     image: "/assets/founders/josh.webp",
   },
   {
-    name: "Gayr",
+    name: "Gary",
     roles: ["Curriculum Developer", "Instructor"],
     image: "/assets/founders/gary.webp",
+    bio: "I’m a dedicated high school student with a passion for math, science, and music. At Glass Frog Academy, I develop engaging curriculums and instruct students, striving for more accessible and enjoyable learning experience.",
   },
   {
     name: "Mi",
