@@ -2,22 +2,7 @@
 import BentoItem from "../../components/BentoItem.astro";
 import { ScrollArea } from "../../components/ui/scroll-area";
 
-const classes = [
-  "Math 7",
-  "Math 8",
-  "Math 9",
-  "Math 10",
-  "Math 10 IB",
-  "Math 20 IB",
-  "Science 10 IB",
-  "Science 20 IB",
-  "Biology 20 IB",
-  "Chemistry 20",
-  "Compositional Writing 10",
-  "Reading Comprehension 10",
-  "Web Design and Development",
-  "Systems Engineering and Programming",
-];
+const classes = ["Math", "Science", "Humanities", "Computer Science"];
 ---
 
 <div class="flex flex-col justify-center max-w-5xl mx-auto gap-6 px-4">
@@ -50,11 +35,21 @@ const classes = [
         view more button leading to the classes page
       -->
       <h2 class="text-xl font-bold mb-2">What we Teach</h2>
-      <ScrollArea className="w-full h-40" client:load>
-        <ul class="list-disc pl-4">
-          {classes.map((clas) => <li class="mb-2">{clas}</li>)}
-        </ul>
-      </ScrollArea>
+      <!-- <ScrollArea className="w-full h-40" client:load> -->
+      <!--   <ul class="list-disc pl-4"> -->
+      <!--     {classes.map((clas) => <li class="mb-2">{clas}</li>)} -->
+      <!--   </ul> -->
+      <!-- </ScrollArea> -->
+      <ul class="list-disc pl-4">
+        {classes.map((clas) => <li>{clas}</li>)}
+        <li>
+          <button class="text-blue-500 background-zinc-800">
+            <a href="/classes" class="text-blue-500 hover:underline">
+              View More Info
+            </a>
+          </button>
+        </li>
+      </ul>
     </BentoItem>
     <BentoItem classes="flex-1/2">
       <h2 class="text-xl font-bold mb-2">What we do</h2>
