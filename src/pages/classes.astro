@@ -47,9 +47,11 @@ const classes = [
   <body class="bg-zinc-200 w-full">
     <NavBar />
     <div class="h-24"></div>
-    <section class="py-12 px-4 mx-auto flex items-center flex-col">
-      <h1 class="text-5xl font-bold text-center mb-8">Classes</h1>
-      <div class="flex flex-col gap-4">
+    <section class="py-12 px-4 mx-auto flex items-center flex-col max-w-5xl">
+      <h1 class="text-5xl font-bold text-center mb-4">Classes</h1>
+      <h2 class="text-xl font-semibold mb-8"><i>All courses provided by Glass Frog Academy are free of charge, and will be held on Zoom</i></h2>
+      <p class="mb-8 text-center">Glass Frog Academy is offering a free 8 week course for the summer of 2025 from the start of July to the end of August. Please fill out this interest form if you wish to attend this course. More information will be provided later.</p>
+      <div class="flex flex-col gap-4 mb-8">
         {classes.map((classItem) => (
           <div class="flex flex-col">
             <h2 class="text-3xl font-semibold">{classItem.name}</h2>
@@ -63,6 +65,7 @@ const classes = [
           </div>
         ))}
       </div>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmGyqcoztTjJlr062c2C7hDmYPZ9nA_LPCt1ck0Np3f9C72g/viewform?embedded=true" width="700" height="1750">Loading…</iframe>
     </section>
   </body>
 </html>
