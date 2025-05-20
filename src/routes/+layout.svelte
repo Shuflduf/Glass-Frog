@@ -1,7 +1,13 @@
 <script lang="ts">
-	import '../app.css';
+import '../app.css';
+import NavBar from '$lib/components/NavBar.svelte';
+import Footer from '$lib/components/Footer.svelte';
 
-	let { children } = $props();
+let { children } = $props();
 </script>
 
-{@render children()}
+<div class="bg-zinc-200">
+  <NavBar />
+  {@render children()}
+  <Footer />
+</div>
