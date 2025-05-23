@@ -1,4 +1,3 @@
-<div class="h-16"></div>
 <section class="h-[80vh] flex items-center justify-center flex-col">
   <div class="px-4 flex flex-col items-center justify-center gap-10 bg-gradient-to-r from-zinc-700 to-zinc-800 text-transparent bg-clip-text">
     <h1 class="text-5xl sm:text-6xl font-bold text-center">

@@ -83,16 +83,16 @@
 				>
 					<img
             src={member.image}
-						alt="Reecher"
+						alt={member.name}
 						class="h-60 w-60 object-cover"
 					/>
 				</div>
 				<div class="ml-4 flex w-60 flex-col justify-center">
-					<h3 class="text-center text-lg font-semibold">Reecher</h3>
+					<h3 class="text-center text-lg font-semibold">{member.name}</h3>
 					<ul class="text-center text-gray-600">
-						<li>Lead Director</li>
-						<li>Curriculum Developer</li>
-						<li>Instructor</li>
+            {#each member.roles as role}
+              <li>{role}</li>
+            {/each}
 					</ul>
 				</div>
 				<div class="flex items-center">

@@ -6,4 +6,3 @@ import TeamView from '$lib/components/TeamView.svelte';
 
 <Hero />
 <BentoBox />
-<TeamView />

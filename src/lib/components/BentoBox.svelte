@@ -4,7 +4,7 @@ import BentoItem from './BentoItem.svelte';
 const classes = ["Math", "Science", "Humanities", "Computer Science"];
 </script>
 
-<div class="flex flex-col justify-center max-w-5xl mx-auto gap-6 px-4">
+<div class="flex flex-col justify-center max-w-5xl mx-auto gap-6 px-4 pb-12">
   <div class="flex w-full gap-6 flex-wrap">
     <BentoItem classes="flex-2/5">
       <h2 class="text-xl font-bold mb-2">About Glass Frog Academy</h2>
