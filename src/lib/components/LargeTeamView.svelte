@@ -71,10 +71,11 @@
 	];
 </script>
 
-<section class="mx-auto max-w-4xl px-4 py-12">
-	<h2 class="mb-12 text-center text-3xl font-bold">Our Team</h2>
+<section class="py-12 px-4 mx-auto flex items-center flex-col max-w-5xl">
+<!-- <section class="mx-auto max-w-4xl px-4 py-12"> -->
+  <h1 class="text-5xl font-bold text-center mb-4">Our Team</h1>
 
-	<div class="flex flex-col items-center gap-12">
+	<div class="flex flex-col gap-12">
 		{#each team as member}
 			<div class="flex">
 				<div
@@ -83,7 +84,7 @@
 					<img
             src={member.image}
 						alt="Reecher"
-						class="h-full w-full object-cover"
+						class="h-60 w-60 object-cover"
 					/>
 				</div>
 				<div class="ml-4 flex w-60 flex-col justify-center">
@@ -95,12 +96,13 @@
 					</ul>
 				</div>
 				<div class="flex items-center">
-					<div class="h-min border-2 border-l-zinc-400 p-4">
-						<p class="w-80 italic">
-							I’m dedicated to providing all students at GFA fun, engaging, and helpful learning. I
-							enjoy playing badminton and studying. Professional Eater.
-						</p>
-					</div>
+          {#if member.bio}
+            <div class="h-min border-l-zinc-400 border-l-2 p-4">
+              <p class="w-80 italic">
+                {@html member.bio}
+              </p>
+            </div>
+          {/if}
 				</div>
 			</div>
 		{/each}

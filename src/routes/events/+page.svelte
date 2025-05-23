@@ -1,7 +1,6 @@
 <script lang="ts">
 </script>
 
-<div class="h-24" />
 <section class="py-12 px-4 mx-auto flex items-center flex-col max-w-5xl">
   <h1 class="text-5xl font-bold text-center mb-4">Events</h1>
   <h2 class="text-xl font-semibold mb-8">

@@ -31,7 +31,6 @@ const classes = [
 ];
 </script>
 
-<div class="h-24" />
 <section class="py-12 px-4 mx-auto flex items-center flex-col max-w-5xl">
   <h1 class="text-5xl font-bold text-center mb-4">Classes</h1>
   <h2 class="text-xl font-semibold mb-8">
@@ -58,7 +57,7 @@ const classes = [
   <iframe 
     src="https://docs.google.com/forms/d/e/1FAIpQLSfmGyqcoztTjJlr062c2C7hDmYPZ9nA_LPCt1ck0Np3f9C72g/viewform?embedded=true" 
     width="700" 
-    height="1720"
+    height="1800"
     title="Course Interest Form"
   >Loading…</iframe>
 </section>
