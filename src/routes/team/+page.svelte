@@ -94,7 +94,7 @@
 
 	<div class="flex flex-col gap-12">
 		{#each team as member}
-			<div class="flex">
+			<div class="flex flex-col md:flex-row items-center">
 				<div
 					class="h-40 w-40 overflow-hidden rounded-full border-2 border-gray-100 shadow-md transition-transform duration-300 hover:scale-105 flex items-center justify-center"
 				>
@@ -112,9 +112,9 @@
             {/each}
 					</ul>
 				</div>
-				<div class="flex items-center">
+				<div class="flex items-center mt-4 md:mt-0">
           {#if member.bio}
-            <div class="h-min border-l-zinc-400 border-l-2 p-4">
+            <div class="h-min border-y-zinc-400 border-y-2 md:border-y-0 md:border-l-zinc-400 md:border-l-2 p-4">
               <p class="w-80 italic">
                 {@html member.bio}
               </p>

@@ -2,16 +2,11 @@
 	let lastScroll = $state(0);
 	let prevScroll = $state(0);
 
-	// let mobileMenuOpen = $state(false);
-	// let isMobile = $state(false);
-	//
-	//  let showNavbar = $derived((isMobile && mobileMenuOpen) || (!isMobile))
+	let mobileMenuOpen = $state(false);
 
 	if (typeof window !== 'undefined') {
 		lastScroll = window.scrollY;
 		prevScroll = window.scrollY;
-
-		// isMobile = window.outerWidth > 768;
 	}
 
 	function handleScroll() {
@@ -19,14 +14,12 @@
 		lastScroll = window.scrollY;
 	}
 
-	// function handleResize() {
-	//    console.log('resized');
-	// 	isMobile = window.outerWidth > 768;
-	// }
+	function toggleMenu() {
+		mobileMenuOpen = !mobileMenuOpen;
+	}
 
 	if (typeof window !== 'undefined') {
 		window.addEventListener('scroll', handleScroll);
-		// window.addEventListener('resize', handleResize);
 	}
 </script>
 
@@ -36,34 +29,40 @@
 		: 'translate-y-0'} flex justify-end"
 >
 	<div
-		class="flex flex-col items-end gap-16 rounded-2xl border border-zinc-400 bg-zinc-300/30 p-4 shadow-lg backdrop-blur-md md:w-full md:flex-row md:items-center md:justify-between"
+		class="flex flex-col items-end rounded-2xl border border-zinc-400 bg-zinc-300/30 p-4 shadow-lg backdrop-blur-md md:w-full md:flex-row md:items-center md:justify-between"
 	>
-		<!--   {isMobile} -->
-		<!-- {#if showNavbar} -->
-			<a href="/">
-				<img src="/assets/gfa.png" alt="Glass Frog Academy Logo" class="h-16" />
+		<button onclick={toggleMenu} class="md:hidden">
+			<img 
+				src={mobileMenuOpen ? "assets/icons/close.svg" : "assets/icons/menu.svg"} 
+				alt={mobileMenuOpen ? "Close menu" : "Open menu"} 
+				class="brightness-0" 
+			/>
+		</button>
+
+		<a href="/" class="{mobileMenuOpen ? 'block' : 'hidden'} md:block">
+			<img src="/assets/gfa.png" alt="Glass Frog Academy Logo" class="h-16 my-8 md:my-0" />
+		</a>
+
+		<div class="hidden md:flex md:flex-row gap-4 md:gap-12 {mobileMenuOpen ? '!flex flex-col items-end' : ''}">
+			<a href="/team">
+				<div class="flex items-end">
+					<p class="text-xl">Our Team</p>
+					<img src="/assets/icons/chevron_down.svg" class="brightness-0" alt="chevron" />
+				</div>
 			</a>
-			<div class="flex flex-col items-end gap-12 md:flex-row">
-				<a href="/team">
-					<div class="flex items-end">
-						<p class="text-xl">Our Team</p>
-						<img src="/assets/icons/chevron_down.svg" class="brightness-0" alt="chevron" />
-					</div>
-				</a>
-				<a href="/classes">
-					<div class="flex items-end">
-						<p class="text-xl">Classes</p>
-						<img src="/assets/icons/chevron_down.svg" class="brightness-0" alt="chevron" />
-					</div>
-				</a>
-				<a href="/events">
-					<div class="flex items-end">
-						<p class="text-xl">Events</p>
-						<img src="/assets/icons/chevron_down.svg" class="brightness-0" alt="chevron" />
-					</div>
-				</a>
-			</div>
-		<!-- {/if} -->
+			<a href="/classes">
+				<div class="flex items-end">
+					<p class="text-xl">Classes</p>
+					<img src="/assets/icons/chevron_down.svg" class="brightness-0" alt="chevron" />
+				</div>
+			</a>
+			<a href="/events">
+				<div class="flex items-end">
+					<p class="text-xl">Events</p>
+					<img src="/assets/icons/chevron_down.svg" class="brightness-0" alt="chevron" />
+				</div>
+			</a>
+		</div>
 	</div>
 </div>
-<div class="h-24"></div>
+<div class="md:h-24"></div>

@@ -76,7 +76,7 @@ const team: Member[] = [
 
   <div class="flex flex-wrap gap-8 justify-center">
     {#each team as founder}
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col md:flex-col items-center">
         <div class="relative mb-4 group">
           {#if founder.bio}
             <div class="
