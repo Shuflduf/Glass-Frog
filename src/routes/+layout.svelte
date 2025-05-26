@@ -14,7 +14,7 @@ const stars = Array.from({ length: 500 }, () => ({
 }));
 </script>
 
-<div class="relative min-h-screen bg-zinc-300 overflow-hidden">
+<div class="relative min-h-screen bg-zinc-200 overflow-hidden">
   {#each stars as star}
     <div 
       class="star absolute rounded-full bg-white"
