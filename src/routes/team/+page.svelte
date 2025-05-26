@@ -22,7 +22,7 @@
 		{
 			name: 'Ethan',
 			roles: ['Co-Lead', 'Instructor'],
-			// image: '/assets/founders/ethan.jpg',
+			 image: '/assets/founders/ethan.jpg',
       bio: "My interests in math and science do not necessarily imply talent for them. I'm spectacularly gifted at failing flamboyantly. I'm just here to bring down the average IQ of the team."
 		},
 		{
