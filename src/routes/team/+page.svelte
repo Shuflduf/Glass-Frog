@@ -72,6 +72,12 @@
 			roles: ['Advertising Manager', 'Course Moderator'],
       image: '/assets/founders/joanna.png',
       bio: "I'm a huge social studies nerd, would totally love to talk about the political and economic state of the world anytime. I strive to be as non-judgmental as I could be."
+    },
+    {
+      name: 'Bryan',
+      roles: ['Instructor'],
+      image: '/assets/founders/bryan.jpg',
+      bio: "I’m very interested in learning and passionate about sharing knowledge. My field of focus is math, science, and second language. GFA’s #1 soccer fan and Marvel fan. But overall, I’m just a chill guy."
     }
 		// {
 		// 	name: '<s style="color: black; text-decoration-thickness: 3px"><span style="color: red">Zoon Minotaur</span></s>',
