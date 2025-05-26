@@ -33,7 +33,7 @@ const classes = [
 
 <section class="py-12 px-4 mx-auto flex items-center flex-col max-w-5xl">
   <h1 class="text-5xl font-bold text-center mb-4">Classes</h1>
-  <h2 class="text-xl font-semibold mb-8">
+  <h2 class="text-xl font-semibold mb-8 text-center">
     <i>All courses provided by Glass Frog Academy are free of charge, and will be held on Zoom</i>
   </h2>
   <p class="mb-8 text-center max-w-4xl">

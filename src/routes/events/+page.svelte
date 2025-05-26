@@ -3,7 +3,7 @@
 
 <section class="py-12 px-4 mx-auto flex items-center flex-col max-w-5xl">
   <h1 class="text-5xl font-bold text-center mb-4">Events</h1>
-  <h2 class="text-xl font-semibold mb-8">
+  <h2 class="text-xl font-semibold mb-8 text-center">
     <i>All events hosted by Glass Frog Academy are free of charge and open to all students</i>
   </h2>
   <p class="mb-8 text-center max-w-4xl">
