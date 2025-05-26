@@ -1,4 +1,4 @@
-<div class="bg-zinc-800 w-screen h-16 flex items-center justify-around p-16">
+<div class="bg-zinc-800 w-screen md:h-16 flex items-center justify-around p-16 flex-col md:flex-row gap-4">
   <div class="flex items-center justify-center text-zinc-200">
     <a href="https://discord.gg/mSMmAKha9e" class="h-16">
       <img

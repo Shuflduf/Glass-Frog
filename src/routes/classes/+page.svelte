@@ -36,7 +36,7 @@ const classes = [
   <h2 class="text-xl font-semibold mb-8">
     <i>All courses provided by Glass Frog Academy are free of charge, and will be held on Zoom</i>
   </h2>
-  <p class="mb-8 text-center">
+  <p class="mb-8 text-center max-w-4xl">
     Glass Frog Academy is offering a free 8 week course for the summer of 2025 from the start of July to the end of August. 
     Please fill out this interest form if you wish to attend this course. More information will be provided later.
   </p>
@@ -57,7 +57,8 @@ const classes = [
   <iframe 
     src="https://docs.google.com/forms/d/e/1FAIpQLSfmGyqcoztTjJlr062c2C7hDmYPZ9nA_LPCt1ck0Np3f9C72g/viewform?embedded=true" 
     width="700" 
-    height="1800"
+    height="1900"
     title="Course Interest Form"
+    class="max-w-screen"
   >Loading…</iframe>
 </section>
