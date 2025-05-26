@@ -18,6 +18,6 @@
   </div>
   <div class="text-zinc-600 text-center">
     <p>&copy; 2025 Glass Frog. All rights reserved.</p>
-    <p>Made with ❤️ by the Glass Frog Team</p>
+    <p>Made with Love, Svelte, and Tailwind</p>
   </div>
 </div>
