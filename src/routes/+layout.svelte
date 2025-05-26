@@ -2,8 +2,16 @@
 import '../app.css';
 import NavBar from '$lib/components/NavBar.svelte';
 import Footer from '$lib/components/Footer.svelte';
+import { onMount } from 'svelte';
 
 let { children } = $props();
+let visible = $state(false);
+
+onMount(() => {
+  setTimeout(() => {
+    visible = true;
+  }, 2000);
+});
 
 // Generate 100 random star positions
 const stars = Array.from({ length: 500 }, () => ({
@@ -17,7 +25,8 @@ const stars = Array.from({ length: 500 }, () => ({
 <div class="relative min-h-screen bg-zinc-200 overflow-hidden">
   {#each stars as star}
     <div 
-      class="star absolute rounded-full bg-white"
+      class="star absolute rounded-full bg-white transition-opacity duration-1000"
+      class:opacity-0={!visible}
       style="
         top: {star.top}%;
         left: {star.left}%;
