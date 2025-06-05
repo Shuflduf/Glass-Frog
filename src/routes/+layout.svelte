@@ -45,7 +45,7 @@ const stars = Array.from({ length: 0 }, () => ({
 
 <style>
   html {
-    color: #e4e4e7;
+    color: #d4d4d8b;
   }
   .star {
     animation: twinkle 4s ease-in-out infinite;
