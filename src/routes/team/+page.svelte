@@ -22,8 +22,8 @@
 		{
 			name: 'Ethan',
 			roles: ['Co-Lead', 'Instructor'],
-			 image: '/assets/founders/ethan.jpg',
-      bio: "My interests in math and science do not necessarily imply talent for them. I'm spectacularly gifted at failing flamboyantly. I'm just here to bring down the average IQ of the team."
+			image: '/assets/founders/ethan.jpg',
+      			bio: "I'm passionate about helping students build confidence in core subjects as they prepare for the transition to high school. As an instructor, I strive to make learning engaging and approachable, creating a space where every student feels supported and empowered."
 		},
 		{
 			name: 'Matthew',
