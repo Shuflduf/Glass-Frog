@@ -21,7 +21,7 @@
 		},
 		{
 			name: 'Ethan',
-			roles: ['Co-Lead', 'Instructor'],
+			roles: ['Co-Lead', 'Instructor', 'Curriculum Developer'],
 			image: '/assets/founders/ethan.jpg',
       			bio: "I'm passionate about helping students build confidence in core subjects as they prepare for the transition to high school. As an instructor, I strive to make learning engaging and approachable, creating a space where every student feels supported and empowered."
 		},
@@ -39,7 +39,7 @@
 		},
 		{
 			name: 'Josh',
-			roles: ['Event Coordinator', 'Partnership Manager'],
+			roles: ['Event Coordinator', 'Partnership Manager', 'Instructor', 'Curriculum Developer'],
 			image: '/assets/founders/josh.jpg',
       bio: "I’m passionate about making learning exciting, accessible, and hands-on for everyone at GFA. I’m deep into robotics and 3D printing—bringing ideas to life layer by layer and servo by servo."
 		},
@@ -56,29 +56,23 @@
       bio: "Throughout junior high and now high school, learning has been a major part of my life just like many students. I hope to share my experiances with others and help them learn and be very prepared for what is to come."
 		},
 		{
-			name: 'Jasper Springs',
-			roles: ['Instructor'],
-			image: '/assets/founders/jasper.webp',
-			bio: "I'm an excellent student and a wonderful teacher, I'm very talented in mathematics and a fan of clash royal."
+			name: 'Megan',
+			roles: ['Advertising Manager', 'Course Moderator', 'Instructor'],
+			image: '/assets/founders/megan.png',
+	bio: "I want to help all gfa students to be more prepared for highschool so they won't suffer like I did. I enjoy math and science, but outside of academics I like to indulge in art, music, and badminton"
 		},
 		{
-			name: 'Megan',
-			roles: ['Advertising Manager', 'Course Moderator'],
-			image: '/assets/founders/megan.png',
-      bio: "I want to help all gfa students to be more prepared for highschool so they won't suffer like I did. I enjoy math and science, but outside of academics I like to indulge in art, music, and badminton"
+			name: 'Joanna',
+			roles: ['Advertising Manager', 'Course Moderator', 'Instructor'],
+			image: '/assets/founders/joanna.png',
+			bio: "I'm a huge social studies nerd, would totally love to talk about the political and economic state of the world anytime. I strive to be as non-judgmental as I could be."
 		},
-    {
-      name: 'Joanna',
-			roles: ['Advertising Manager', 'Course Moderator'],
-      image: '/assets/founders/joanna.png',
-      bio: "I'm a huge social studies nerd, would totally love to talk about the political and economic state of the world anytime. I strive to be as non-judgmental as I could be."
-    },
-    {
-      name: 'Bryan',
-      roles: ['Instructor'],
-      image: '/assets/founders/bryan.jpg',
-      bio: "I’m very interested in learning and passionate about sharing knowledge. My field of focus is math, science, and second language. GFA’s #1 soccer fan and Marvel fan. But overall, I’m just a chill guy."
-    }
+		{
+			name: 'Bryan',
+			roles: ['Instructor'],
+			image: '/assets/founders/bryan.jpg',
+			bio: "I’m very interested in learning and passionate about sharing knowledge. My field of focus is math, science, and second language. GFA’s #1 soccer fan and Marvel fan. But overall, I’m just a chill guy."
+		}
 		// {
 		// 	name: '<s style="color: black; text-decoration-thickness: 3px"><span style="color: red">Zoon Minotaur</span></s>',
 		// 	roles: ['Bull of Hell'],
