@@ -23,7 +23,7 @@
 			name: 'Ethan',
 			roles: ['Co-Lead', 'Instructor', 'Curriculum Developer'],
 			image: '/assets/founders/ethan.jpg',
-      			bio: "I'm passionate about helping students build confidence in core subjects as they prepare for the transition to high school. As an instructor, I strive to make learning engaging and approachable, creating a space where every student feels supported and empowered."
+			bio: "I'm passionate about helping students build confidence in core subjects as they prepare for the transition to high school. As an instructor, I strive to make learning engaging and approachable, creating a space where every student feels supported and empowered."
 		},
 		{
 			name: 'Matthew',
@@ -35,13 +35,13 @@
 			name: 'Aarav',
 			roles: ['Technical', 'Instructor'],
 			image: '/assets/founders/aarav.jpg',
-      bio: "I’m dedicated to making learning fun and engaging. I’ve been a huge science, music, and aviation nerd for all my life. I enjoy game development and webdev as hobbies."
+			bio: 'I’m dedicated to making learning fun and engaging. I’ve been a huge science, music, and aviation nerd for all my life. I enjoy game development and webdev as hobbies.'
 		},
 		{
 			name: 'Josh',
 			roles: ['Event Coordinator', 'Partnership Manager', 'Instructor', 'Curriculum Developer'],
 			image: '/assets/founders/josh.jpg',
-      bio: "I’m passionate about making learning exciting, accessible, and hands-on for everyone at GFA. I’m deep into robotics and 3D printing—bringing ideas to life layer by layer and servo by servo."
+			bio: 'I’m passionate about making learning exciting, accessible, and hands-on for everyone at GFA. I’m deep into robotics and 3D printing—bringing ideas to life layer by layer and servo by servo.'
 		},
 		{
 			name: 'Gary',
@@ -53,13 +53,13 @@
 			name: 'Amy',
 			roles: ['Course Moderator'],
 			image: '/assets/founders/amy.png',
-      bio: "Throughout junior high and now high school, learning has been a major part of my life just like many students. I hope to share my experiances with others and help them learn and be very prepared for what is to come."
+			bio: 'Throughout junior high and now high school, learning has been a major part of my life just like many students. I hope to share my experiances with others and help them learn and be very prepared for what is to come.'
 		},
 		{
 			name: 'Megan',
 			roles: ['Advertising Manager', 'Course Moderator', 'Instructor'],
 			image: '/assets/founders/megan.png',
-	bio: "I want to help all gfa students to be more prepared for highschool so they won't suffer like I did. I enjoy math and science, but outside of academics I like to indulge in art, music, and badminton"
+			bio: "I want to help all gfa students to be more prepared for highschool so they won't suffer like I did. I enjoy math and science, but outside of academics I like to indulge in art, music, and badminton"
 		},
 		{
 			name: 'Joanna',
@@ -71,7 +71,13 @@
 			name: 'Bryan',
 			roles: ['Instructor'],
 			image: '/assets/founders/bryan.jpg',
-			bio: "I’m very interested in learning and passionate about sharing knowledge. My field of focus is math, science, and second language. GFA’s #1 soccer fan and Marvel fan. But overall, I’m just a chill guy."
+			bio: 'I’m very interested in learning and passionate about sharing knowledge. My field of focus is math, science, and second language. GFA’s #1 soccer fan and Marvel fan. But overall, I’m just a chill guy.'
+		},
+		{
+			name: 'Ryan',
+			roles: ['Instructor'],
+			image: '/assets/founders/ryan.jpg',
+			bio: 'I sincerely believe that all students have hidden talent and want them to find it in any way possible. I strive to find creative ways of teaching in the hopes that students will have a wonderful experience. Also I am a professional sleeper.'
 		}
 		// {
 		// 	name: '<s style="color: black; text-decoration-thickness: 3px"><span style="color: red">Zoon Minotaur</span></s>',
@@ -83,8 +89,8 @@
 </script>
 
 <section class="py-12 px-4 mx-auto flex items-center flex-col max-w-5xl">
-<!-- <section class="mx-auto max-w-4xl px-4 py-12"> -->
-  <h1 class="text-5xl font-bold text-center mb-4">Our Team</h1>
+	<!-- <section class="mx-auto max-w-4xl px-4 py-12"> -->
+	<h1 class="text-5xl font-bold text-center mb-4">Our Team</h1>
 
 	<div class="flex flex-col gap-12">
 		{#each team as member}
@@ -93,7 +99,7 @@
 					class="h-40 w-40 overflow-hidden rounded-full border-2 border-gray-100 shadow-md transition-transform duration-300 hover:scale-105 flex items-center justify-center"
 				>
 					<img
-            src={member.image || '/assets/founders/frog.svg'}
+						src={member.image || '/assets/founders/frog.svg'}
 						alt={member.name}
 						class="h-60 w-60 object-cover"
 					/>
@@ -101,19 +107,21 @@
 				<div class="ml-4 flex w-60 flex-col justify-center">
 					<h3 class="text-center text-lg font-semibold">{@html member.name}</h3>
 					<ul class="text-center text-gray-600">
-            {#each member.roles as role}
-              <li>{role}</li>
-            {/each}
+						{#each member.roles as role}
+							<li>{role}</li>
+						{/each}
 					</ul>
 				</div>
 				<div class="flex items-center mt-4 md:mt-0">
-          {#if member.bio}
-            <div class="h-min border-y-zinc-400 border-y-2 md:border-y-0 md:border-l-zinc-400 md:border-l-2 p-4">
-              <p class="w-80 italic">
-                {@html member.bio}
-              </p>
-            </div>
-          {/if}
+					{#if member.bio}
+						<div
+							class="h-min border-y-zinc-400 border-y-2 md:border-y-0 md:border-l-zinc-400 md:border-l-2 p-4"
+						>
+							<p class="w-80 italic">
+								{@html member.bio}
+							</p>
+						</div>
+					{/if}
 				</div>
 			</div>
 		{/each}
